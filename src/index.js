@@ -1,8 +1,10 @@
-import React from 'react';
-import {
-  render,
-} from 'react-dom';
-import App from './App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+document.getElementById("button").addEventListener("click", () => {
+  console.log("clicked button");
+});
 
-render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  React.createElement("div", undefined, "Hello World"),
+  document.getElementById("react-root")
+);
